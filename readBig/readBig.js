@@ -39,3 +39,5 @@ const fs = require('node:fs/promises');
     }
 )();
 
+// key principle, not push the chunks in the memory, wait for the internal buffer to drain
+// keeping the memory usage as low as possible is the principle here.
